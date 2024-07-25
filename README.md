@@ -91,7 +91,9 @@ observation: 工具运行的结果
 # 用法
 1. 你需要将你的数据集设置成如data.csv格式的数据, 并替换掉它; 
 
-2. 直接运行LLM.py即可, 调用call_llm函数描述你需要构建的因子; 
+2. 注意, 需要在deepseek官网申请api, 然后再LLM.py的deepseek_api变量中贴上你的api; 
+
+3. 直接运行LLM.py即可, 调用call_llm函数描述你需要构建的因子; 
 
 # 运行结果展示
 运行LLM.py文件的结果
