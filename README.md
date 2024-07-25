@@ -1,9 +1,11 @@
 # 从强化学习开始讲起
 智能体会结合当前状态$s_t$进行思考(也就是通过动作网络)然后做出决策$a_t$, 最终获得收益$r_{t+1}$, 进而进入到下一个状态$s_{t+1}$.
+
 $$s_t\overset{a_t\, r_{t+1}}{\xrightarrow{}\xrightarrow{}}s_{t+1}\overset{a_{t+1}\, r_{t+2}}{\xrightarrow{}\xrightarrow{}}s_{t+2} ...  $$
 
 # 过渡到我们的语言模型
 其实已知$s_t$做出$a_t$这一动作是需要有一个神经网络来训练的. 现在给你一个现成的语言模型就说明这个神经网络是训练好了的. 每有一个观测状态$s_t$, 语言模型一定有办法给出一个未来奖励$r_t+r_{t+1}+...$最大化的一个动作(至少模型是这么认为的). 所以利用这一个特性, 就出现了react提示词工程. 
+
 $$s_t\overset{a_t}{\xrightarrow{}\xrightarrow{}}s_{t+1}\overset{a_{t+1}}{\xrightarrow{}\xrightarrow{}}s_{t+2} ...  $$
 
 # 大模型的三个角色
