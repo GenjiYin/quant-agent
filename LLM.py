@@ -3,9 +3,9 @@ import pandas as pd
 from openai import OpenAI
 from prompt import table_to_query, gen_prompt
 from tools import data, tool_map
-deepseek_api = 'sk-09b2df08a3b2499189b7087b4a5ba98e'
 
-# os.environ['TAVILY_API_KEY'] = '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'
+# 在这里贴上deepseek的api
+deepseek_api = '****************************************'
 
 def parser(result, parse_info='Action'):
     if parse_info == 'Action':
