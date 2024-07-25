@@ -27,7 +27,7 @@ $$s_t\overset{a_t}{\xrightarrow{}\xrightarrow{}}s_{t+1}\overset{a_{t+1}}{\xright
 # 大模型的三个角色
 system: 大模型的大脑(你可以在这里定义它的人格, 如"你是一个优秀的基金经理"); 
 
-assitant: 大模型大脑的一把手(通常用来回答用户的问题的角色); 
+asistant: 大模型大脑的一把手(通常用来回答用户的问题的角色); 
 
 user: 就是我们(通常用来提出问题的). 
 
